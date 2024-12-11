@@ -103,7 +103,7 @@
                                             </label>
                                         </h3>
                                         <p class="mt-1 text-xs text-gray-500">
-                                            PNG, JPG, GIF up to 10MB
+                                            PNG, JPG, GIF up to 5MB
                                         </p>
                                     </div>
 
