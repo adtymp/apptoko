@@ -11,11 +11,11 @@ class Product extends Model
         'nama_produk',
         'gender',
         'kategori',
-        'deskripsi' 
+        'price',
+        'deskripsi'
     ];
     public function user()
     {
         return $this->belongsTo(User::class);
     }
-
 }

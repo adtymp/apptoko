@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('nama_produk');
             $table->string('gender');
             $table->string('kategori');
+            $table->float('price');
             $table->text('deskripsi');
             $table->timestamps();
         });

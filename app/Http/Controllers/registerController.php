@@ -39,4 +39,16 @@ class registerController extends Controller
             return redirect()->back()->with('gagal', 'Masukkan Email dan Password yang Benar');
         }
     }
+    public function showPartnerPage()
+    {
+        $user = Auth::user();
+        $products = app(ProductController::class)->getProductsByUser($user->id);
+
+        return view('ppartner', [
+            'nama' => $user->name,
+            'email' => $user->email,
+            'products' => $products,
+        ]);
+    }
+
 }
